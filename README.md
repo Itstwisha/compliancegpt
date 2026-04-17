@@ -106,7 +106,7 @@ Opens at `http://localhost:8501`
 
 ---
 
-## 📊 Supported Scan Formats
+## Supported Scan Formats
 
 ### Nessus CSV Export
 Export from Nessus with these columns:
@@ -124,20 +124,28 @@ Any CSV with the required columns above
 
 ## Architecture
 compliancegpt/
+│
 ├── src/
-│   ├── ai/                     # AI integration
-│   │   └── claude_client.py    # Anthropic Claude API client
-│   ├── analyzers/              # Analysis engines
+│   ├── ai/                          # AI integration layer
+│   │   └── claude_client.py         # Anthropic Claude API client
+│   │
+│   ├── analyzers/                   # Analysis engines
 │   │   └── vulnerability_analyzer.py
-│   ├── integrations/           # Data parsers
-│   │   └── csv_parser.py
-│   └── core/                   # Core utilities
+│   │
+│   ├── integrations/                # Data parsers
+│   │   └── csv_parser.py            # CSV vulnerability parser
+│   │
+│   └── core/                        # Core utilities
+│
 ├── data/
-│   ├── sample_vulnerabilities.csv
-│   └── uploads/                # User uploads
-├── dashboard.py                # Streamlit UI
-├── config.yaml                 # Configuration
-└── requirements.txt            # Dependencies
+│   ├── sample_vulnerabilities.csv   # Demo data
+│   └── uploads/                     # User uploads directory
+│
+├── dashboard.py                     # Streamlit web interface
+├── config.yaml                      # Application configuration
+├── requirements.txt                 # Python dependencies
+├── .env.example                     # Environment template
+└── README.md                        # This file
 
 ---
 
@@ -293,10 +301,9 @@ MIT License - see LICENSE file
 
 ---
 
-## 📞 Support
+## Support
 
 Issues? Please [open an issue](https://github.com/Itstwisha/compliancegpt/issues)
 
----
 
-**⭐ If ComplianceGPT helps secure your systems, please star the repository!**
+---
