@@ -8,24 +8,24 @@ ComplianceGPT uses Claude AI to analyze vulnerability scans with business contex
 
 ---
 
-## 🎯 Features
+## Features
 
-### 🧠 AI-Powered Risk Analysis
+### AI-Powered Risk Analysis
 - Context-aware vulnerability prioritization beyond CVSS scores
 - Analyzes vulnerabilities in context of YOUR business environment
 - Considers data classification, environment type, and compliance requirements
 
-### 💼 Business Impact Assessment
+### Business Impact Assessment
 - Plain-English explanations of real-world consequences
 - Quantifies potential business impact
 - Bridges gap between technical findings and business risk
 
-### ⚡ Exploitation Intelligence
+### Exploitation Intelligence
 - Assesses exploitation likelihood based on active threats
 - Identifies public exploits and active campaigns
 - Evaluates attack difficulty and attacker motivation
 
-### 📋 Compliance Intelligence
+### Compliance Intelligence
 - Automatic mapping to compliance frameworks:
   - PCI-DSS (Payment Card Industry Data Security Standard)
   - SOC 2 (Service Organization Control)
@@ -34,20 +34,20 @@ ComplianceGPT uses Claude AI to analyze vulnerability scans with business contex
 - Identifies specific control failures
 - Generates audit-ready documentation
 
-### 🔧 Smart Remediation
+### Smart Remediation
 - Prioritized, actionable fix recommendations
 - Immediate workarounds for critical issues
 - Short-term and long-term prevention strategies
 - Estimated effort and complexity
 
-### 📊 Executive Reporting
+### Executive Reporting
 - Plain-English summaries for leadership
 - CSV export for tracking and documentation
 - Visual dashboards with priority metrics
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.8+
@@ -122,7 +122,7 @@ Any CSV with the required columns above
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 compliancegpt/
 ├── src/
 │   ├── ai/                     # AI integration
@@ -141,7 +141,7 @@ compliancegpt/
 
 ---
 
-## 🎓 How It Works
+## How It Works
 
 ### 1. Data Ingestion
 Parses vulnerability scans from CSV files (Nessus, OpenVAS, custom)
@@ -177,12 +177,14 @@ AI-assigned priority (1-5) based on:
 
 ---
 
-## 📋 Sample Output
+## Sample Output
+![ComplianceGPT Dashboard](docs/screenshots/analysis.png)
+
 🔴 CRITICAL Priority 5/5 - Apache HTTP Server RCE
 CVE: CVE-2024-1234
 CVSS: 9.8 (Critical)
 Host: 192.168.1.10:443
-💼 Business Impact Analysis:
+Business Impact Analysis:
 "A successful exploitation of this Remote Code Execution vulnerability
 would grant attackers complete control over your production web servers.
 In your payment processing environment, this could lead to:
@@ -197,13 +199,13 @@ Estimated breach cost: $500K-$2M based on similar incidents."
 observed in the wild. Attack requires no authentication and is
 trivial to execute. Expect automated scanning and exploitation
 attempts within hours of vulnerability disclosure."
-📋 Compliance Impact:
 
+Compliance Impact:
 Violates PCI-DSS Requirement 6.2 (timely security patches)
 SOC 2 CC6.1 control failure (system security)
 ISO 27001 A.12.6.1 non-compliance (vulnerability management)
 
-🔧 Remediation Plan:
+Remediation Plan:
 Immediate (within 24 hours):
 
 Apply WAF rule to block known exploit patterns
@@ -224,7 +226,7 @@ Establish 48-hour patch SLA for critical vulnerabilities
 
 ---
 
-## 🛠️ Use Cases
+## Use Cases
 
 ### For Security Teams
 - Automate vulnerability triage
@@ -246,7 +248,7 @@ Establish 48-hour patch SLA for critical vulnerabilities
 
 ---
 
-## 🚧 Roadmap
+## Roadmap
 
 - [ ] OpenVAS XML parser
 - [ ] Nessus API integration
@@ -259,7 +261,7 @@ Establish 48-hour patch SLA for critical vulnerabilities
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions welcome! Please:
 1. Fork the repository
@@ -269,13 +271,13 @@ Contributions welcome! Please:
 
 ---
 
-## 📄 License
+## License
 
 MIT License - see LICENSE file
 
 ---
 
-## 👤 Author
+## Author
 
 **Twisha Sharma**
 - GitHub: [@Itstwisha](https://github.com/Itstwisha)
@@ -283,7 +285,7 @@ MIT License - see LICENSE file
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Anthropic Claude AI for intelligent analysis
 - CIS Benchmarks for security standards
