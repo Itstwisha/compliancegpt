@@ -1,0 +1,6 @@
+plugin_id,cve_id,cvss_score,severity,name,description,solution,host,port,protocol
+12345,CVE-2024-1234,9.8,Critical,Apache HTTP Server RCE,"Remote code execution vulnerability in Apache HTTP Server allows unauthenticated attackers to execute arbitrary code","Upgrade to Apache 2.4.58 or later",192.168.1.10,443,tcp
+23456,CVE-2024-2345,8.1,High,OpenSSL Weak Cipher,"OpenSSL configured with weak cipher suites allowing potential decryption of traffic","Update OpenSSL configuration to remove weak ciphers",192.168.1.10,443,tcp
+34567,CVE-2024-3456,7.5,High,MySQL Privilege Escalation,"MySQL server allows authenticated users to escalate privileges","Apply MySQL security patch 8.0.35",192.168.1.20,3306,tcp
+45678,CVE-2024-4567,6.5,Medium,SSH Weak Key Exchange,"SSH server allows weak key exchange algorithms","Update sshd_config to disable weak algorithms",192.168.1.10,22,tcp
+56789,CVE-2024-5678,5.3,Medium,PHP Information Disclosure,"PHP configuration exposes sensitive information in error messages","Set display_errors=Off in php.ini",192.168.1.30,80,tcp

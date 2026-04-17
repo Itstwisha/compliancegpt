@@ -1,0 +1,48 @@
+application:
+  name: "ComplianceGPT"
+  version: "1.0.0"
+  description: "AI-Powered Vulnerability & Risk Analyst"
+
+ai:
+  enabled: true
+  provider: "anthropic"
+  model: "claude-sonnet-4-20250514"
+  max_tokens: 4000
+  temperature: 0.3
+
+analysis:
+  # Risk scoring weights
+  cvss_weight: 0.3
+  exploitability_weight: 0.25
+  business_impact_weight: 0.25
+  compliance_impact_weight: 0.2
+  
+  # Severity thresholds
+  critical_threshold: 9.0
+  high_threshold: 7.0
+  medium_threshold: 4.0
+
+compliance_frameworks:
+  - name: "PCI-DSS"
+    version: "4.0"
+    enabled: true
+  - name: "ISO27001"
+    version: "2022"
+    enabled: true
+  - name: "SOC2"
+    version: "2017"
+    enabled: true
+  - name: "NIST_CSF"
+    version: "1.1"
+    enabled: true
+
+vulnerability_sources:
+  - type: "nessus"
+    enabled: true
+    formats: ["csv", "xml"]
+  - type: "openvas"
+    enabled: true
+    formats: ["xml", "csv"]
+  - type: "nmap"
+    enabled: false
+    formats: ["xml"]
